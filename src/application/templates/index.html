@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+<br>
+<br>
+
+
+    <div>
+        {% for student in students %}
+
+        {{ student.first_name }} {{ student.last_name }}'s email address is {{ student.email_address }}
+       
+        <br>
+
+        {% endfor %}
+    <div>
+{% endblock body_content %}
