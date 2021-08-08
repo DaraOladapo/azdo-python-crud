@@ -7,7 +7,7 @@
     <div>
         {% for student in students %}
 
-        {{ student.first_name }} {{ student.last_name }}'s email address is {{ student.email_address }}
+        {{ student.first_name }} {{ student.last_name }}'s email address is {{ student.email_address }} | <a href="{{url_for('details', id=student.id)}}">Details</a> | <a href="{{url_for('update', id=student.id)}}">Update</a> | <a href="{{url_for('delete', id=student.id)}}">Delete</a>
        
         <br>
 

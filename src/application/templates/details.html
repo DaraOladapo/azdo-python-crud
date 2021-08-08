@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+<div>
+    {{ student.first_name }}
+    {{ student.last_name }}
+    {{ student.email_address }}
+    <a href="{{url_for('update', id=student.id)}}">Update</a> | <a href="{{url_for('delete', id=student.id)}}">Delete</a>
+</div>
+{% endblock body_content %}
